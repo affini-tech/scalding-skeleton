@@ -6,9 +6,5 @@ Use
 ---
 
     mvn clean package
-
-    rm -rf output
-    hadoop jar target/part8-1.0.0.jar Example3 --hdfs --doc data/rain.txt --wc output/wc
     
-    rm -rf output
-    hadoop jar target/part8-1.0.0.jar Example4 --hdfs --doc data/rain.txt --stop data/en.stop --wc output/wc
+    hadoop jar target/fatjar-1.0.0.jar WordCount --hdfs --doc data/rain.txt --wc output_fatjar.tsv
